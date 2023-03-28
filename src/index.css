@@ -1,0 +1,40 @@
+
+body{
+  background: #fbf6c4 !important;
+}
+.menu{
+background-color: #0d91ff;
+height: 45px;
+}
+.container{
+background-color: white;
+border: 2px solid #ccc;
+border-radius: 20px;
+}
+.banner img{
+  width: 100%;
+}
+.footer{
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  background-color: #0d91ff;
+  color: #ccc;
+  font-size: 16px;
+  border-radius: 0 0 20px 20px;
+}
+.navbar a{
+  color: white  !important;
+  margin-top: 3px;
+}
+.navbar a:hover{
+  border-radius: 0 15px 0 0;
+  border: 1px solid #fff ;
+
+}
+.num-items{
+  margin-top: -5px;
+  position: absolute;
+  color: #d7ff9c;
+  font-size: 12px;
+}
