@@ -18,7 +18,8 @@ function App() {
           <Menu/>
           <Header/>     
             <Routes>
-                <Route path="/" element={<ItemListContainer />} />                
+                <Route path="/" element={<ItemListContainer />} /> 
+                <Route path="/:idCategory" element={<ItemListContainer />} />               
             </Routes>
         </BrowserRouter>
 

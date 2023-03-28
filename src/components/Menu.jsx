@@ -1,4 +1,5 @@
-function Menu(props) {
+import { Link } from 'react-router-dom';
+const Menu = (props) => {
     return (
       <div className="row menu">
       <div className="col-md-8 order-first ">
@@ -11,27 +12,25 @@ function Menu(props) {
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
         <ul className="navbar-nav">
           <li className="nav-item">
-            <a className="nav-link active" aria-current="page" href="#">Home</a>
+          <Link className="nav-link" to="/">HOME</Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">Salvavidas</a>
+          <Link className="nav-link" to="/salvavidas">Salvavidas</Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">Pelotas</a>
+          <Link className="nav-link" to="/pelotas">Pelotas</Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">Sombrillas</a>
+            <Link className="nav-link" to="/sombrillas">Sombrillas</Link>
           </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#">Variados</a>
-          </li>
+         
       </ul>
       </div>
     </div>
    </nav>
 </div>
       <div className="col order-last pt-1">
-      <button type="button" className="btn btn-outline-success float-end"><i class="bi bi-cart"></i><span className='num-items'>2</span></button>
+      <button type="button" className="btn btn-outline-success float-end"><i className="bi bi-cart"></i><span className='num-items'>2</span></button>
       
       </div>
     </div>
