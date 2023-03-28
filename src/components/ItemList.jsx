@@ -7,7 +7,7 @@ const ItemList = ({ items }) => {
         {
             items.length > 0
             ? items.map(item => <Item key={item.id} title={item.title} price={item.price} pictureUrl={item.thumbnail} stock={item.available_quantity} />)
-            : <p>Cargando...</p>
+            : <p className="item">Cargando...</p>
         }
         </div>
     );

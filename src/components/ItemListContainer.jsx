@@ -6,7 +6,7 @@ import { useParams } from 'react-router-dom';
 const ItemListContainer = () => {
     const [datos, setDatos] = useState([]);
     const { idCategory } = useParams();
-    var idC = idCategory ? idCategory : 'pelotas';
+    var idC = idCategory ? idCategory : 'verano';
     //ComponentDidMount()
     useEffect(() => {
         axios('https://api.mercadolibre.com/sites/MLA/search?q='+ idC)

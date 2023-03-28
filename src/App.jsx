@@ -10,24 +10,17 @@ import ItemListContainer from "./components/ItemListContainer";
 
 function App() {
   const [count, setCount] = useState(0)
-
   return (
     <div className="App container ">     
         <BrowserRouter>   
           <Logo/> 
           <Menu/>
           <Header/>     
-            <Routes>
+            <Routes> 
                 <Route path="/" element={<ItemListContainer />} /> 
                 <Route path="/:idCategory" element={<ItemListContainer />} />               
             </Routes>
         </BrowserRouter>
-
-    <div className="row">
-      <div className="col p-0">
-      <ItemListContainer/>
-      </div>
-    </div>
         <Footer/>
         
         </div>

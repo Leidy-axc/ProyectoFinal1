@@ -26,7 +26,7 @@ const ItemDetail = ({ item }) => {
                     <ItemCount stock={item.stock} initial={1} onAdd={onAdd} />
                 </WrapperDetail>
             </DetailContainer>
-            : <p>Cargando...</p>
+            : <p className='detail'>Cargando...</p>
         }
         </>
     );
